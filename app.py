@@ -7,25 +7,25 @@ JOBS = [
         'id': 1, 
         'title': 'Data Analyst', 
         'location': 'Miami, Fl', 
-        'salary': '120,000'
+        'salary': '$120,000'
     }, 
     { 
         'id': 2, 
         'title': 'Data Engineer', 
         'location': 'Tampa, Fl', 
-        'salary': '180,000'
+        'salary': '$180,000'
     }, 
     {
         'id': 3,
         'title': 'Frontend Engineer',
         'location': 'Miami, Fl',
-        'salary': '200,000'
+        'salary': '$200,000'
     },
     {
         'id': 4,
         'title': 'Backend Engineer',
         'location': 'Miami, Fl',
-        'salary': '200,000'
+        'salary': '$200,000'
     },
 ]
 COMPANY_NAME = 'Company Name'
