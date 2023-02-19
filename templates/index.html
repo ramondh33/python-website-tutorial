@@ -12,10 +12,10 @@
         
     </head>
     <body>
+        {% include 'nav.html' %}
+        <img id="banner" class="img-fluid" src="/static/somethingGreat.jpg" height="320px">
         <div class="container">
             <h1 class="text-center mt-2 mb-4">{{company_name}} Careers</h1>
-            <img id="banner" class="img-fluid" src="/static/somethingGreat.jpg" height="320px">
-            <h2 class="text-center mt-2 mb-4">About {{company_name}}</h2>
             <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Auctor augue mauris augue neque 
                 gravida. Massa ultricies mi quis hendrerit dolor magna eget est lorem. In cursus turpis massa tincidunt dui ut ornare. Nunc consequat interdum varius sit 
                 amet. Nunc non blandit massa enim nec dui nunc. Molestie at elementum eu facilisis sed odio morbi quis commodo. Nunc mattis enim ut tellus elementum 
@@ -29,7 +29,7 @@
             </div>
             <div class="text-center">
                 <button class="btn btn-primary btn-lg">Contact Us</button>
-                <p class="lead mt-4">Copyright 2023 {{company_name}}</p>
+                {% include 'footer.html' %}
             </div>
         </div>
     </body>
