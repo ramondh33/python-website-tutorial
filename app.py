@@ -28,7 +28,7 @@ JOBS = [
         'salary': '200,000'
     },
 ]
-COMPANY_NAME = 'Apple'
+COMPANY_NAME = 'Company Name'
 
 @app.route('/')
 
