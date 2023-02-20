@@ -16,11 +16,18 @@
         <img id="banner" class="img-fluid" src="/static/somethingGreat.jpg" height="320px">
         <div class="container">
             <h1 class="text-center mt-2 mb-4">{{company_name}} Careers</h1>
-            <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Auctor augue mauris augue neque 
+            <div class="row" style="margin-bottom:16px;">
+                <div class="col-md-6">
+                    <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Auctor augue mauris augue neque 
                 gravida. Massa ultricies mi quis hendrerit dolor magna eget est lorem. In cursus turpis massa tincidunt dui ut ornare. Nunc consequat interdum varius sit 
                 amet. Nunc non blandit massa enim nec dui nunc. Molestie at elementum eu facilisis sed odio morbi quis commodo. Nunc mattis enim ut tellus elementum 
                 sagittis. Rhoncus est pellentesque elit ullamcorper dignissim cras tincidunt. Magnis dis parturient montes nascetur. Augue neque gravida in fermentum et 
                 sollicitudin ac. Volutpat commodo sed egestas egestas fringilla phasellus.</p>
+                </div>
+                <div class="d-none d-md-block col-md-6">
+                    <img src="/static/people.jpg" style="height:320px;border-radius:6px;">
+                </div>
+            </div>
             <h2 class="text-center mt-2 mb-4">Job Openings</h2>
             <div>
                 {% for job in jobs %}
@@ -28,7 +35,8 @@
                 {% endfor %}
             </div>
             <div class="text-center">
-                <button class="btn btn-primary btn-lg" style="margin-top:15px;">Contact Us</button>
+                <a href="mailto:someone@{{company_name}}.com?subject=Question%20about%20job%20openings.&body=Your%20name%3A%20%3C%20Full%20name%20%3E%0D%0A%0D%0AWhat%20are%20your%20questions%3A%20%3C%20Write%20questions%20here%20%3E" 
+                class="btn btn-primary btn-lg" style="margin-top:15px;">Contact Us</a>
                 {% include 'footer.html' %}
             </div>
         </div>
