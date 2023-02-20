@@ -32,7 +32,7 @@ COMPANY_NAME = 'Company Name'
 
 @app.route('/')
 
-def hello_world():
+def company_info():
     return render_template('index.html', jobs=JOBS, company_name=COMPANY_NAME)
 
 @app.route('/api/jobs')
